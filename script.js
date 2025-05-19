@@ -7,6 +7,7 @@ function loadSlideshow(categories) {
     var slideshowContainer = document.getElementById("slideshow-container");
     var categoryKeys = [];
 
+
     for (var key in categories) {
         if (categories.hasOwnProperty(key)) {
             categoryKeys.push(key);
@@ -43,7 +44,7 @@ function loadSlideshow(categories) {
 
             slides[currentIndex].className += " active";
         }
-    }, 6000); // Change every 5 seconds
+    }, 4000); // Change every 4 seconds
 }
 
 

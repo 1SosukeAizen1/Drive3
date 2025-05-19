@@ -150,7 +150,7 @@
             {
                 "name": " ",
                 "desc": "Corned-Beef, Swiss cheese, sauerkraut and thousand island dressing on grilled rye bread",
-                "price": "$8.99"
+                "price": "$7.99"
             }
         ],
         "combo-banner": {
@@ -236,7 +236,7 @@
             {
                 "name": "Flavors",
                 "desc": "vanilla, Chocolate, Strawberry, Banana, Oreo, PeanutButter, Mango, caramel",
-                "price": "Sm $4.99 Lg $5.49"
+                "price": "Sm $4.99 Lg $5.99"
             },
             {
                 "name": "Monthly Shake ",
@@ -246,7 +246,7 @@
             {
                 "name": "",
                 "desc": "Add extra flavor",
-                "price": "$0.50"
+                "price": "$0.75"
             }
         ]
     }
