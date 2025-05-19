@@ -44,7 +44,7 @@ function loadSlideshow(categories) {
 
             slides[currentIndex].className += " active";
         }
-    }, 4000); // Change every 4 seconds
+    }, 6000); // Change every 6 seconds
 }
 
 
