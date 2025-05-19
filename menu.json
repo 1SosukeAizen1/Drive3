@@ -204,6 +204,23 @@
         
     },
     "drive3": {
+        "Tossed wings":[    
+            {
+                "name": "",
+                "desc": " Tossed in your choice of sauce",
+                "price": ""
+            },
+            {
+                "name": "5 / 10 pc dinner",
+                "desc": "",
+                "price": "$7.99 / $11.99"
+            },
+            {
+                "name": "5 pc / 10 pc / 15 pc",
+                "desc": "",
+                "price": "$5.99 / $9.99 / $14.99"
+            }
+        ],
         
         "Loaded fries": [
             {
