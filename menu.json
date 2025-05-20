@@ -200,6 +200,24 @@
                 "desc": "",
                 "price": "Sm $2.39 Lg $3.49"
             }
+        ]  ,
+        
+        "Loaded fries": [
+            {
+                "name": "Buffalo chicken Fries",
+                "desc": "",
+                "price": "$9.99"
+            },
+            {
+                "name": "Gyro Cheese Fries",
+                "desc": "",
+                "price": "$9.99"
+            },
+            {
+                "name": "CheeseBurger Fries",
+                "desc": "",
+                "price": "$8.99"
+            }
         ]
         
     },
@@ -219,24 +237,6 @@
                 "name": "5 pc / 10 pc / 15 pc",
                 "desc": "",
                 "price": "$5.99 / $9.99 / $14.99"
-            }
-        ],
-        
-        "Loaded fries": [
-            {
-                "name": "Buffalo chicken Fries",
-                "desc": "",
-                "price": "$9.99"
-            },
-            {
-                "name": "Gyro Cheese Fries",
-                "desc": "",
-                "price": "$9.99"
-            },
-            {
-                "name": "CheeseBurger Fries",
-                "desc": "",
-                "price": "$8.99"
             }
         ]
         
