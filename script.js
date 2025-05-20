@@ -3,48 +3,42 @@ var screenType = "drive3"; // Main menu
 var secondaryScreenType = "drive3/2"; // Secondary menu
 
 // Function to load the slideshow
-function loadSlideshow(categories) {
+function loadSlideshow() {
     var slideshowContainer = document.getElementById("slideshow-container");
-    var categoryKeys = [];
+    slideshowContainer.innerHTML = "";
 
+    fetch('slideshow.json')
+        .then(response => response.json())
+        .then(images => {
+            for (var i = 0; i < images.length; i++) {
+                var img = document.createElement("img");
+                img.src = "assets/slideshow/" + images[i];
+                img.className = "slideshow-image";
+                img.alt = "Slideshow";
+                img.style.display = "none";
+                if (i === 0) img.className += " active";
+                slideshowContainer.appendChild(img);
+            }
 
-    for (var key in categories) {
-        if (categories.hasOwnProperty(key)) {
-            categoryKeys.push(key);
-        }
-    }
+            var slides = slideshowContainer.querySelectorAll(".slideshow-image");
+            if (slides.length === 0) return;
 
-    // Get all category images
-    var images = [];
-    for (var i = 0; i < categoryKeys.length; i++) {
-        var category = categoryKeys[i];
-        images.push("assets/icons/" + encodeURIComponent(category) + ".png");
-    }
+            var currentIndex = 0;
+            slides[currentIndex].style.display = "block";
 
-    // Add images to the slideshow container
-    for (var j = 0; j < images.length; j++) {
-        var src = images[j];
-        var img = document.createElement("div");
-        img.style.backgroundImage = "url(" + src + ")";
-        img.className = "slideshow-image";
-        if (j === 0) img.className += " active";
-        slideshowContainer.appendChild(img);
-    }
+            if (window.slideshowInterval) clearInterval(window.slideshowInterval);
 
-    // Cycle through images
-    var currentIndex = 0;
-    setInterval(function () {
-        var slides = document.querySelectorAll(".slideshow-image");
-
-        if (slides.length > 0) {
-            slides[currentIndex].className = slides[currentIndex].className.replace(" active", "");
-
-            currentIndex = (currentIndex + 1) % slides.length;
-            if (currentIndex >= slides.length) currentIndex = 0; // Always reset to first
-
-            slides[currentIndex].className += " active";
-        }
-    }, 6000); // Change every 6 seconds
+            window.slideshowInterval = setInterval(function () {
+                slides[currentIndex].classList.remove("active");
+                slides[currentIndex].style.display = "none";
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add("active");
+                slides[currentIndex].style.display = "block";
+            }, 4000);
+        })
+        .catch(() => {
+            slideshowContainer.innerHTML = "<p>Slideshow failed to load.</p>";
+        });
 }
 
 
@@ -117,7 +111,7 @@ function loadMenu(screenType, containerId) {
 
                 // Load the slideshow for the main menu
                 if (containerId === "menu-items") {
-                    loadSlideshow(categories);
+                    loadSlideshow();
                 }
             } catch (e) {
                 console.log("Error parsing menu.json:", e);
