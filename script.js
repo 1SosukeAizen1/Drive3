@@ -1,16 +1,16 @@
-// Hardcoded default screen types
+// Hardcoded default screen type
 var screenType = "drive3"; // Main menu
 var secondaryScreenType = "drive3/2"; // Secondary menu
 
 // Function to load the slideshow
 function loadSlideshow() {
     var slideshowContainer = document.getElementById("slideshow-container");
-    slideshowContainer.innerHTML = "";
+    slideshowContainer.innerHTML = ""; // Clear previous content
 
     fetch('slideshow.json')
         .then(response => response.json())
         .then(images => {
-            for (var i = 0; i < images.length; i++) {
+            for (var i = 0; i < images.length; i++) { 
                 var img = document.createElement("img");
                 img.src = "assets/slideshow/" + images[i];
                 img.className = "slideshow-image";
