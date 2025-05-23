@@ -48,7 +48,7 @@ function loadSlideshow() {
                 currentIndex = (currentIndex + 1) % slides.length;
                 slides[currentIndex].classList.add("active");
                 slides[currentIndex].style.display = "block";
-            }, 4000);
+            }, 7000);
         })
         .catch(() => {
             slideshowContainer.innerHTML = "<p>Slideshow failed to load.</p>";

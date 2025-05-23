@@ -199,6 +199,11 @@
                 "name": "Mashed potatoes",
                 "desc": "",
                 "price": "Sm $2.39 Lg $3.49"
+            },
+            { 
+                "name": "side of rice",
+                "desc": "",
+                "price": "$2.99"
             }
         ]  ,
         
@@ -222,6 +227,24 @@
         
     },
     "drive3": {
+        
+        "Loaded fries": [
+            {
+                "name": "Buffalo chicken Fries",
+                "desc": "",
+                "price": ""
+            },
+            {
+                "name": "Gyro Cheese Fries",
+                "desc": "",
+                "price": "$9.99"
+            },
+            {
+                "name": "CheeseBurger Fries",
+                "desc": "",
+                "price": "$8.99"
+            }
+        ],
         "Sodas": [
             {
                 "name": "Pepsi Products",
@@ -233,7 +256,7 @@
             {
                 "name": "Root Beer Float",
                 "desc": "",
-                "price": "Sm $3.99  Lg $4.49"
+                "price": "Sm $3.49  Lg $4.49"
             }
         ]
     },
