@@ -199,6 +199,11 @@
                 "name": "Mashed potatoes",
                 "desc": "",
                 "price": "Sm $2.39 Lg $3.49"
+            },
+            { 
+                "name": "side of rice",
+                "desc": "",
+                "price": "$2.99"
             }
         ]  ,
         
