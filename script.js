@@ -10,17 +10,30 @@ function loadSlideshow() {
     fetch('slideshow.json')
         .then(response => response.json())
         .then(images => {
-            for (var i = 0; i < images.length; i++) { 
+            for (var i = 0; i < images.length; i++) {
+                // Create slide wrapper
+                var slideDiv = document.createElement("div");
+                slideDiv.className = "slideshow-slide";
+                if (i === 0) slideDiv.classList.add("active");
+                slideDiv.style.display = "none";
+
+                // Create image
                 var img = document.createElement("img");
-                img.src = "assets/slideshow/" + images[i];
+                img.src = "assets/slideshow/" + images[i].file;
                 img.className = "slideshow-image";
-                img.alt = "Slideshow";
-                img.style.display = "none";
-                if (i === 0) img.className += " active";
-                slideshowContainer.appendChild(img);
+                img.alt = images[i].name;
+
+                // Create caption
+                var caption = document.createElement("div");
+                caption.className = "slideshow-caption";
+                caption.textContent = images[i].name;
+
+                slideDiv.appendChild(img);
+                slideDiv.appendChild(caption);
+                slideshowContainer.appendChild(slideDiv);
             }
 
-            var slides = slideshowContainer.querySelectorAll(".slideshow-image");
+            var slides = slideshowContainer.querySelectorAll(".slideshow-slide");
             if (slides.length === 0) return;
 
             var currentIndex = 0;
