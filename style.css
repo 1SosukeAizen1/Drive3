@@ -91,7 +91,8 @@ body {
     
     margin-bottom: 0%;
     
-    
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 12px;
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 1px;
