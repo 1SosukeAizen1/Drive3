@@ -157,13 +157,15 @@ body {
 /* Category Title */
 .category-title {
     
-    font-size: 4rem; /* Slightly larger font size */
+    font-size: 3.5rem; /* Slightly larger font size */
     color: #ed0000; /* White text for contrast */
     max-width: 100%;
     margin-bottom: 0px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
     
     
-    
+    border-radius: 13px; /* Rounded corners */
+    padding: 2px; /* Add padding for spacing */
     
     text-align: center; /* Center the text */
     
