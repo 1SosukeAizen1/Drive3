@@ -4,7 +4,8 @@
 body {
     margin: 0;
     top: 30%;
-    background-color: black;
+    background: url("assets/background/background.jpg") no-repeat center center fixed;
+    background-size: cover !important;
     font-family: 'Luckiest Guy', cursive;
     color: #000000;
     overflow: hidden; /* Prevent scrolling */
@@ -27,35 +28,78 @@ body {
 
    
 }
-
 #slideshow-container {
     position: fixed;
     left: 0;
     top: 50%;
     width: 100%;
-    height: 70%;
-    background: #000;
+    height: 60%;
+    background: transparent;
     overflow: hidden;
     z-index: 10;
 }
+
+.slideshow-slide {
+    display: none;
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    /* Add flex layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slideshow-slide.active {
+    display: flex;
+}
+
 .slideshow-image {
     position: relative;
     left: 0;
     top: 0;
     width: 100%;
-    height: 70%;
+    height: 100%;
     object-fit: contain;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s;
     z-index: 1;
-    display: none;
+    display: block;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    margin: 0 auto;
 }
 .slideshow-image.active {
     opacity: 1;
     z-index: 2;
     display: block;
 }
-
+.slideshow-caption {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    
+    margin-bottom: 0%;
+    
+    
+    border-radius: 12px;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+    z-index: 4;
+    font-style: underline italic; 
+    width: 100%;
+    box-sizing: border-box;
+}
 
 /* Category Block */
 .menu-category {
@@ -366,5 +410,27 @@ body {
     font-style: it
 }
 
+/* Remove or set to transparent any background on menu containers */
+#menu-items,
+#secondary-menu-items,
+.menu-category,
+.menu-item,
+.items-grid {
+    background: transparent !important;
+}
 
+/* Remove background from .menu-category if present */
+.menu-category {
+    background: transparent !important;
+}
+
+/* Remove background from .menu-item if present */
+.menu-item {
+    background: transparent !important;
+}
+
+/* Remove background from .items-grid if present */
+.items-grid {
+    background: transparent !important;
+}
 

@@ -17,19 +17,20 @@ function loadSlideshow() {
                 if (i === 0) slideDiv.classList.add("active");
                 slideDiv.style.display = "none";
 
+                // Create caption
+                var caption = document.createElement("div");
+                caption.className = "slideshow-caption";
+                caption.textContent = images[i].name;
+
                 // Create image
                 var img = document.createElement("img");
                 img.src = "assets/slideshow/" + images[i].file;
                 img.className = "slideshow-image";
                 img.alt = images[i].name;
 
-                // Create caption
-                var caption = document.createElement("div");
-                caption.className = "slideshow-caption";
-                caption.textContent = images[i].name;
-
-                slideDiv.appendChild(img);
+                // Append caption first, then image
                 slideDiv.appendChild(caption);
+                slideDiv.appendChild(img);
                 slideshowContainer.appendChild(slideDiv);
             }
 
