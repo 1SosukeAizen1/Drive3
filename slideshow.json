@@ -2,6 +2,5 @@
   { "file": "Reuben.png", "name": "Reuben Sandwich" },
   { "file": "CheeseSteak.jpg", "name": "Deluxe cheesesteak" },
   { "file": "Gyro.jpg", "name": "Gyro" },
-  { "file": "ShakesMalts.png", "name": "Shakes & Malts" },
-  { "file": "fish dinner.jpg", "name": "Fish Dinner" }
+  { "file": "ShakesMalts.png", "name": "Shakes & Malts" }
 ]
