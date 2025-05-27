@@ -2,23 +2,7 @@
     
     "drive3": {
         
-        "Loaded fries": [
-            {
-                "name": "Buffalo chicken Fries",
-                "desc": "",
-                "price": ""
-            },
-            {
-                "name": "Gyro Cheese Fries",
-                "desc": "",
-                "price": "$9.99"
-            },
-            {
-                "name": "CheeseBurger Fries",
-                "desc": "",
-                "price": "$8.99"
-            }
-        ],
+        
         "Sodas": [
             {
                 "name": "Pepsi Products",
