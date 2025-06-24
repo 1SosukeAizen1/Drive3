@@ -6,7 +6,7 @@
         "Sodas": [
             {
                 "name": "Pepsi Products",
-                "desc": "Pepsi, diet pepsi, Mt. Dew, dr. pepper, orange crush, root beer, fruit punch, pink lemonade, iced tea",
+                "desc": "Pepsi, diet pepsi, mt Dew, dr. pepper, orange crush, root beer, fruit punch, pink lemonade, iced tea",
                 "price": "$2.69"
             }
         ],
