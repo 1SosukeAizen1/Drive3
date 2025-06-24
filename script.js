@@ -156,4 +156,3 @@ document.getElementById("screen-links").addEventListener("click", function (even
         loadMenu(secondaryScreenType, "secondary-menu-items");
     }
 });
-
