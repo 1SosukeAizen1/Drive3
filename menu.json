@@ -19,24 +19,29 @@
         ],
         "Smoothies": [
             {
-                "name": "Mango Smoothie",
+                "name": "",
+                "desc": "Cool down with Slim's Smoothies, and Taste the summer in every sip!",        
+                "price": ""
+            },
+            {
+                "name": "Mango ",
                 "desc": "",
                 "price": ""
             },
             {
-                "name": "Strawberry Banana Smoothie",
+                "name": "Strawberry Banana ",
                 "desc": "",
                 "price": ""
             },
             {
-                "name": "Mix-Berries Smoothie",
+                "name": "Mix-Berries ",
                 "desc": "",
                 "price": ""
             },
             {
-                "name": "Passion Fruit Smoothie",
+                "name": "Passion Fruit ",
                 "desc": "",
-                "price": ""
+                "price": "$5.99"
             }
         ]
     },
