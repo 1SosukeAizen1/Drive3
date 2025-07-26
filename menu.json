@@ -16,6 +16,28 @@
                 "desc": "",
                 "price": "Sm $3.49  Lg $4.49"
             }
+        ],
+        "Smoothies": [
+            {
+                "name": "Mango Smoothie",
+                "desc": "",
+                "price": ""
+            },
+            {
+                "name": "Strawberry Banana Smoothie",
+                "desc": "",
+                "price": ""
+            },
+            {
+                "name": "Mix-Berries Smoothie",
+                "desc": "",
+                "price": ""
+            },
+            {
+                "name": "Passion Fruit Smoothie",
+                "desc": "",
+                "price": ""
+            }
         ]
     },
     "drive3/2": {
