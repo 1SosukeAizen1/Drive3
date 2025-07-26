@@ -6,13 +6,13 @@
         "Sodas": [
             {
                 "name": "Pepsi Products",
-                "desc": "Pepsi, diet pepsi, Mt.Dew, dr. pepper, orange crush, root beer, fruit punch, pink lemonade, iced tea",
+                "desc": "",
                 "price": "$2.69"
             }
         ],
         "Floats": [
             {
-                "name": "Root Beer Float",
+                "name": "",
                 "desc": "",
                 "price": "Sm $3.49  Lg $4.49"
             }
