@@ -132,71 +132,15 @@
                 "price": ""
             },
             {
-                "name": "3 finger dinner",
-                "desc": "",
-                "price": "$11.99"
-            },
-            {
-                "name": "5 finger dinner",
-                "desc": "",
-                "price": "$15.99"
-            },
-            {
-                "name": "",
-                "desc": "",
-                "price": "Just fingers"
+                "name": "Flavors",
+                "desc": "vanilla, Chocolate, Strawberry, Banana, Oreo, PeanutButter, Mango, caramel",
+                "price": "Sm $4.99 Lg $5.99"
             },
             
             {
-                "name": "3 pc fingers ",
-                "desc": "",
-                "price": "$7.99 "
-            },
-            {
-                "name": "5 pc fingers",
-                "desc": "",
-                "price": "$12.99"
-            },
-            {
-                "name": "12 pc fingers",
-                "desc": "",
-                "price": "$24.99"
-            }
-        ],
-        
-        
-        "Dipping Sauces:": {
-            "type": "banner",
-            "text": "BBQ, Ranch, Buffalo, Blue Cheese, H-Mustard, sweet&sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
-            "price": ""
-        },
-        "Loaded fries": [
-            {
-                "name": "Buffalo chicken",
-                "desc": "",
-                "price": "$9.99"
-            },
-            {
-                "name": "Gyro Cheese",
-                "desc": "",
-                "price": "$9.99"
-            },
-            {
-                "name": "CheeseBurger ",
-                "desc": "",
-                "price": "$8.99"
-            }
-        ],
-        "Rice Bowls": [
-            {
-                "name": "",
-                "desc": "rice, lettuce and sauce: white - spicy - tzatziki",
-                "price": ""
-            },
-            {
-                "name": "Chicken, Gyro, combo, OR BBQ Chicken legs",
-                "desc": "",
-                "price": "Sm $10.99   Lg $12.99"
+                "name": "Reese's peanut butter cups",
+                "desc": " ",
+                "price": " "
             },
             
             {
