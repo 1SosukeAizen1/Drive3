@@ -134,14 +134,15 @@
             {
                 "name": "Flavors",
                 "desc": "vanilla, Chocolate, Strawberry, Banana, Oreo, PeanutButter, Mango, caramel",
+                "price": ""
+            },
+              {
+                "name": "shake of the month",
+                "desc": "Snickers",
                 "price": "Sm $4.99 Lg $5.99"
             },
             
-            {
-                "name": "Reese's peanut butter cups",
-                "desc": " ",
-                "price": " "
-            },
+           
             
             {
                 "name": "Steak Bowl",
