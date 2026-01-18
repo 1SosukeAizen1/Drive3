@@ -21,15 +21,19 @@ body {
     width: 50%; /* Full width of the viewport */
     height: 100%; /* Take 70% of the viewport height */
     overflow-y: auto;
+    
+    
+    
     background: transparent; /* Semi-transparent background for better readability */
-    z-index: 5;
+
+   
 }
 #slideshow-container {
     position: fixed;
     left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+    top: 60%;
+    width: 100%;
+    height: 60%;
     background: transparent;
     overflow: hidden;
     z-index: 10;
@@ -45,13 +49,14 @@ body {
     padding: 0;
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    
+    height: 60%;
     box-sizing: border-box;
     /* Add flex layout */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .slideshow-slide.active {
@@ -63,7 +68,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: calc(100% - 80px);
+    height: 100%;
     object-fit: contain;
     opacity: 1;
     transition: opacity 1s;
