@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slim's Menu</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            background-image: url('assets/background/const.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+<script>
+const GITHUB_API_URL = "https://api.github.com/repos/1sosukeaizen1/Drive3/commits?sha=main";
+let lastCommit = null;
+
+async function checkForUpdate() {
+    try {
+        const response = await fetch(GITHUB_API_URL, { cache: "no-store" });
+        const data = await response.json();
+        if (data && data[0] && data[0].sha) {
+            if (!lastCommit) {
+                lastCommit = data[0].sha;
+            } else if (lastCommit !== data[0].sha) {
+                location.reload(true);
+            }
+        }
+    } catch (e) {
+        // Optionally handle errors
+    }
+}
+
+setInterval(checkForUpdate, 30000); // Check every 30 seconds
+checkForUpdate();
+</script>
+
 
 <body>
+ 
+    
+    <!-- Menu Items -->
+    <div id="menu-items"></div>
+    <!-- Menu Items -->
+    <div id="secondary-menu-items"></div>
+    
+    <div id="slideshow-container">
+   
+</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
