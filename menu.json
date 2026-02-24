@@ -14,58 +14,20 @@
             {
                 "name": "",
                 "desc": "",
-                "price": "Sm $3.49  Lg $4.49"
-            }
-        ],
-        "Smoothies": [
-            {
-                "name": "",
-                "desc": "Cool down with Slim's Smoothies, and Taste the summer in every sip!",        
-                "price": ""
-            },
-            {
-                "name": "Mango ",
-                "desc": "",
-                "price": ""
-            },
-            {
-                "name": "Strawberry Banana ",
-                "desc": "",
-                "price": ""
-            },
-            {
-                "name": "Mix-Berries ",
-                "desc": "",
-                "price": ""
-            },
-            {
-                "name": "Passion Fruit + mango",
-                "desc": "",
-                "price": "$5.99"
+                "price": "$3.49"
             }
         ]
+        
     },
     "drive3/2": {
         
         "Shakes and Malts": [
             {
                 "name": "Flavors",
-                "desc": "vanilla, Chocolate, Strawberry, Banana, Oreo, PeanutButter, Mango, caramel",
-                "price": ""
-            },
-              {
-                "name": "shake of the month",
-                "desc": "Snickers",
-                "price": "Sm $4.99 Lg $5.99"
-            },
-            
-           
-            
-            {
-                "name": "tiramisu shake",
-                "desc": "",
-                "price": "Sm $5.99 Lg $6.99"
+                "desc": "vanilla, Chocolate, Strawberry, Oreo, PeanutButter, Mango, caramel",
+                "price": "$5.99"
             }
+            
         ]
     }
 }
