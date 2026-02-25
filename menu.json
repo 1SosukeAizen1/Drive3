@@ -21,11 +21,11 @@
     },
     "drive3/2": {
         
-        "Shakes and Malts": [
+        "Shakes": [
             {
                 "name": "Flavors",
-                "desc": "vanilla, Chocolate, Strawberry, Oreo, PeanutButter, Mango, caramel",
-                "price": "$5.99"
+                "desc": "vanilla, Chocolate, Strawberry, Oreo",
+                "price": "sm $5.99"
             }
             
         ]
