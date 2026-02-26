@@ -1,6 +1,4 @@
-// Hardcoded default screen type
-var screenType = "drive3"; // Main menu
-var secondaryScreenType = "drive3/2"; // Secondary menu
+
 
 
 // Function to load the slideshow
