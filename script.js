@@ -1,17 +1,17 @@
-var backgrounds = [
+const backgrounds = [
     'assets/background/Bowls.jpg',
     'assets/background/shakes.jpeg'
 ];
 
-var layers = [
+const layers = [
     document.getElementById('bg-layer-1'),
     document.getElementById('bg-layer-2')
 ];
 
-layers[0].style.backgroundImage = "url('" + backgrounds[0] + "')";
-layers[1].style.backgroundImage = "url('" + backgrounds[1] + "')";
+layers[0].style.backgroundImage = `url('${backgrounds[0]}')`;
+layers[1].style.backgroundImage = `url('${backgrounds[1]}')`;
 
-var currentLayer = 0;
+let currentLayer = 0;
 
 function switchBackground() {
     layers[currentLayer].classList.remove('active');
