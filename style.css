@@ -4,13 +4,27 @@
 body {
     margin: 0;
     top: 30%;
-    background: url("assets/background/Bowls.jpg") no-repeat center center fixed;
-    background-size: cover !important;
+    background: none;
     font-family: 'Luckiest Guy', cursive;
     color: #000000;
     overflow: hidden; /* Prevent scrolling */
 }
 
+
+.bg-layer {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.bg-layer.active {
+    opacity: 1;
+}
 
 /* Menu Items Container */
 #menu-items {
